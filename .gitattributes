@@ -54,7 +54,6 @@
 # Unity-related text files
 # -----------------------------------------------
 *.asset text=auto eol=lf
-*.meta text
 
 # Shading
 *.cginc text
