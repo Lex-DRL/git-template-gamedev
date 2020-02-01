@@ -55,7 +55,6 @@
 # -----------------------------------------------
 *.asset text=auto eol=lf
 *.meta text
-ProjectSettings/*.asset text
 
 # Shading
 *.cginc text
@@ -164,8 +163,5 @@ ProjectSettings/*.asset text
 # -----------------------------------------------
 # Unity-related
 # -----------------------------------------------
-# *.gizmo in Assets dir might no longer be a nuke file, but a Unity's icon:
-/[Aa]ssets/**/*.[Gg][Ii][Zz][Mm][Oo] text=auto eol=lf
-/[Aa]ssets/*[Tt]ext*[Mm]esh*/**/*SDF*.asset filter=lfs diff=lfs merge=lfs -text
 *.entities filter=lfs diff=lfs merge=lfs -text
 *.bundle filter=lfs diff=lfs merge=lfs -text

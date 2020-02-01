@@ -1,0 +1,4 @@
+﻿# gitattributes placed in the ProjectSettings folder
+
+# all assets here should be text files:
+*.asset text
