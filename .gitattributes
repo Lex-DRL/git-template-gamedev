@@ -171,6 +171,8 @@
 # Houdini:
 *.[Oo][Tt][Ll] filter=lfs diff=lfs merge=lfs -text
 *.[Hh][Dd][Aa] filter=lfs diff=lfs merge=lfs -text
+*.[Bb][Gg][Ee][Oo] filter=lfs diff=lfs merge=lfs -text
+*.[Bb][Gg][Ee][Oo].[Ss][Cc] filter=lfs diff=lfs merge=lfs -text
 
 
 # -----------------------------------------------
