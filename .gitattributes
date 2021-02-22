@@ -164,8 +164,13 @@
 # same for Maya-ascii format:
 *.[Mm][Aa] filter=lfs diff=lfs merge=lfs
 *.[Oo][Bb][Jj] filter=lfs diff=lfs merge=lfs
-# substance:
+
+# Substance:
 *.[Ss][Bb][Ss][Aa][Rr] filter=lfs diff=lfs merge=lfs
+
+# Houdini:
+*.[Oo][Tt][Ll] filter=lfs diff=lfs merge=lfs -text
+*.[Hh][Dd][Aa] filter=lfs diff=lfs merge=lfs -text
 
 
 # -----------------------------------------------
