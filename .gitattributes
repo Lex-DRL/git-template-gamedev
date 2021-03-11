@@ -122,8 +122,9 @@
 # Images: Primary
 *.[Ee][Xx][Rr] filter=lfs diff=lfs merge=lfs -text
 *.[Hh][Dd][Rr] filter=lfs diff=lfs merge=lfs -text
-*.[Jj][Pp][Ee][Gg] filter=lfs diff=lfs merge=lfs -text
+*.[Gg][Ii][Ff] filter=lfs diff=lfs merge=lfs -text
 *.[Jj][Pp][Gg] filter=lfs diff=lfs merge=lfs -text
+*.[Jj][Pp][Ee][Gg] filter=lfs diff=lfs merge=lfs -text
 *.[Pp][Nn][Gg] filter=lfs diff=lfs merge=lfs -text
 
 # Images: Secondary
