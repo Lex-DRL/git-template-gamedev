@@ -112,9 +112,20 @@ venv.bak/
 /[Ll]ogs/
 /[Oo]bj/
 /[Tt]emp/
-/[Mm]emory[Cc]aptures/
+/[Uu]ser[Ss]ettings/
+
+# Builds
+*.aab
 *.apk
+*.app
 *.unitypackage
+
+# MemoryCaptures can get excessive in size.
+# They also could contain extremely sensitive data
+/[Mm]emory[Cc]aptures/
+
+# Recordings can get excessive in size
+/[Rr]ecordings/
 
 # Crash reports
 sysinfo.txt
@@ -125,7 +136,7 @@ crashlytics-build.properties
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
 
-# re-include previously excluded files from these dirs:
+# Re-include previously excluded files from these dirs:
 !/[Aa]ssets/**/*
 !/[Pp]roject[Ss]ettings/**/*
 
