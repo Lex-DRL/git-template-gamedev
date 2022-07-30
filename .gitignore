@@ -21,7 +21,7 @@
 # =========================================================================== #
 # 	Python-related
 # =========================================================================== #
-# src: https://github.com/github/gitignore/blob/master/Python.gitignore
+# src: https://github.com/github/gitignore/blob/main/Python.gitignore
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -104,7 +104,7 @@ venv.bak/
 # =========================================================================== #
 # 	Unity-related
 # =========================================================================== #
-# src: https://github.com/github/gitignore/blob/master/Unity.gitignore
+# src: https://github.com/github/gitignore/blob/main/Unity.gitignore
 
 /[Bb]uild/
 /[Bb]uilds/
