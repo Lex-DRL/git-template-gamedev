@@ -1,4 +1,4 @@
-﻿# Based on FPS-sample: https://github.com/Unity-Technologies/FPSSample
+# Based on FPS-sample: https://github.com/Unity-Technologies/FPSSample
 # Organized+extended by Lex-DRL: https://github.com/Lex-DRL/git-template-gamedev
 
 # Auto-detect text/binary by default:
@@ -6,7 +6,7 @@
 
 # raw-Text files
 *.[Cc][Ss][Vv] text
-*.[Mm][Dd] text
+*.[Mm][Dd] text diff=markdown
 *.[Tt][Xx][Tt] text
 
 # Checksums
@@ -19,21 +19,25 @@
 *.[Cc][Mm][Dd] text
 *.[Pp][Ll] text
 *.[Pp][Ss]1 text
-*.[Ss][Hh] text
+*.[Ss][Hh] text diff=bash
 
-# Scripts: various Programming languages
-*.[Cc][Ss] diff=csharp text
-*.[Cc][Ss][Ss] diff=css text
-*.[Hh] text
-*.[Hh][Tt][Mm] diff=html text
-*.[Hh][Tt][Mm][Ll] diff=html text
+# Scripts: Python
+*.[Pp][Yy] text diff=python
+
+# Scripts: Other programming languages
+*.[Cc][Ss] text !eol diff=csharp
+*.[Cc][Ss][Ss] text diff=css
+*.[Hh] text diff=cpp
+*.[Hh][Tt][Mm] text diff=html
+*.[Hh][Tt][Mm][Ll] text diff=html
 *.[Jj][Ss] text
 *.[Jj][Ss][Oo][Nn] text
-*.[Pp][Hh][Pp] text
-*.[Pp][Yy] diff=python text
+*.[Pp][Hh][Pp] text diff=php
 *.[Ss][Qq][Ll] text=auto eol=lf
-*.[Xx][Mm][Ll] diff=html text
-*.[Xx][Hh][Tt][Mm][Ll] diff=html text
+*.[Xx][Mm][Ll] text diff=html
+*.[Xx][Hh][Tt][Mm][Ll] text diff=html
+*.[Yy][Aa][Mm][Ll] text
+*.[Yy][Mm][Ll] text
 
 # Vector graphics
 *.[Ss][Vv][Gg] text
@@ -88,96 +92,107 @@
 
 
 # =========================================================================== #
-# 	LFS binary formats
+# 	Binary formats
 # =========================================================================== #
 
-*.[Dd][Bb] filter=lfs diff=lfs merge=lfs -text
-*.[Mm][Dd][Bb] filter=lfs diff=lfs merge=lfs -text
-*.[Pp][Dd][Tt] filter=lfs diff=lfs merge=lfs -text
+# For LFS: replace "binary" to "filter=lfs diff=lfs merge=lfs -text"
+
+*.[Dd][Bb] binary
+*.[Mm][Dd][Bb] binary
+*.[Pp][Dd][Tt] binary
 
 # Archives
-*.7[Zz] filter=lfs diff=lfs merge=lfs -text
-*.[Gg][Zz] filter=lfs diff=lfs merge=lfs -text
-*.[Zz][Ii][Pp] filter=lfs diff=lfs merge=lfs -text
-*.[AaJjRrTt][Aa][Rr] filter=lfs diff=lfs merge=lfs -text
+*.7[Zz] binary
+*.[Gg][Zz] binary
+*.[Zz][Ii][Pp] binary
+*.[AaJjRrTt][Aa][Rr] binary
 
 # OS libraries
-*.[Dd][Ll][Ll] filter=lfs diff=lfs merge=lfs -text
-*.[Ee][Xx][Ee] filter=lfs diff=lfs merge=lfs -text
-*.[Ss][Oo] filter=lfs diff=lfs merge=lfs -text
-*.[Ss][Yy][Ss] filter=lfs diff=lfs merge=lfs -text
-*.[Bb][Yy][Tt][Ee][Ss] filter=lfs diff=lfs merge=lfs -text
+*.[Dd][Ll][Ll] binary
+*.[Ee][Xx][Ee] binary
+*.[Ss][Oo] binary
+*.[Ss][Yy][Ss] binary
+*.[Bb][Yy][Tt][Ee][Ss] binary
 
 # Python binaries:
-*.[Pp][Yy][Dd] filter=lfs diff=lfs merge=lfs -text
-*.[Pp][Dd][Bb] filter=lfs diff=lfs merge=lfs -text
-*.[Ww][Hh][Ll] filter=lfs diff=lfs merge=lfs -text
+*.[Pp][Yy][CcDdOo] binary
+*.[Pp][Dd][Bb] binary
+*.[Ww][Hh][Ll] binary
 
 # Fonts
-*.[Ee][Oo][Tt] filter=lfs diff=lfs merge=lfs -text
-*.[OoTt][Tt][Ff] filter=lfs diff=lfs merge=lfs -text
-*.[Ww][Oo][Ff][Ff] filter=lfs diff=lfs merge=lfs -text
-*.[Ww][Oo][Ff][Ff]2 filter=lfs diff=lfs merge=lfs -text
+*.[Ee][Oo][Tt] binary
+*.[OoTt][Tt][Ff] binary
+*.[Ww][Oo][Ff][Ff] binary
+*.[Ww][Oo][Ff][Ff]2 binary
+
+# Images: HDR
+*.[Ee][Xx][Rr] binary
+*.[Hh][Dd][Rr] binary
 
 # Images: Primary
-*.[Ee][Xx][Rr] filter=lfs diff=lfs merge=lfs -text
-*.[Hh][Dd][Rr] filter=lfs diff=lfs merge=lfs -text
-*.[Gg][Ii][Ff] filter=lfs diff=lfs merge=lfs -text
-*.[Jj][Pp][Gg] filter=lfs diff=lfs merge=lfs -text
-*.[Jj][Pp][Ee][Gg] filter=lfs diff=lfs merge=lfs -text
-*.[Pp][Nn][Gg] filter=lfs diff=lfs merge=lfs -text
+*.[Bb][Mm][Pp] binary
+*.[Gg][Ii][Ff] binary
+*.[Jj][Pp][Gg] binary
+*.[Jj][Pp][Ee][Gg] binary
+*.[Pp][Nn][Gg] binary
+*.[Tt][Gg][Aa] binary
+*.[Tt][Ii][Ff] binary
+*.[Tt][Ii][Ff][Ff] binary
 
-# Images: Secondary
-*.[Bb][Mm][Pp] filter=lfs diff=lfs merge=lfs -text
-*.[Cc][Uu][Rr] filter=lfs diff=lfs merge=lfs -text
-*.[Ii][Cc][Nn][Ss] filter=lfs diff=lfs merge=lfs -text
-*.[Ii][Cc][OoNn] filter=lfs diff=lfs merge=lfs -text
-*.[Ii][Cc][Oo][Nn] filter=lfs diff=lfs merge=lfs -text
-*.[Pp][Dd][Ff] filter=lfs diff=lfs merge=lfs -text
-*.[Pp][Ss][DdBb] filter=lfs diff=lfs merge=lfs -text
-*.[Tt][Gg][Aa] filter=lfs diff=lfs merge=lfs -text
-*.[Tt][Ii][Ff] filter=lfs diff=lfs merge=lfs -text
-*.[Tt][Ii][Ff][Ff] filter=lfs diff=lfs merge=lfs -text
+# Images: Other
+*.[Cc][Uu][Rr] binary
+*.[Ii][Cc][Nn][Ss] binary
+*.[Ii][Cc][OoNn] binary
+*.[Ii][Cc][Oo][Nn] binary
+*.[Pp][Dd][Ff] binary
+*.[Pp][Ss][DdBb] binary
 
 # Audio
-*.[Aa][Aa][Cc] filter=lfs diff=lfs merge=lfs -text
-*.[AaFf][Ll][Aa][Cc] filter=lfs diff=lfs merge=lfs -text
-*.[Aa][Ii][Ff] filter=lfs diff=lfs merge=lfs -text
-*.[Mm]4[Aa] filter=lfs diff=lfs merge=lfs -text
-*.[Mm][Pp][1234] filter=lfs diff=lfs merge=lfs -text
-*.[Oo][Gg][GgAa] filter=lfs diff=lfs merge=lfs -text
-*.[Ww][Aa][Vv] filter=lfs diff=lfs merge=lfs -text
+*.[Aa][Aa][Cc] binary
+*.[AaFf][Ll][Aa][Cc] binary
+*.[Aa][Ii][Ff] binary
+*.[Mm]4[Aa] binary
+*.[Mm][Pp][1234] binary
+*.[Oo][Gg][GgAa] binary
+*.[Ww][Aa][Vv] binary
 
 # Video
-# mp4 catched by audio pattern
-*.[Aa][Vv][Ii] filter=lfs diff=lfs merge=lfs -text
-*.[Bb][Ii][Kk] filter=lfs diff=lfs merge=lfs -text
-*.[Mm][Kk][Vv] filter=lfs diff=lfs merge=lfs -text
-*.[Oo][Gg][VvXx] filter=lfs diff=lfs merge=lfs -text
-*.[Ss][Ww][Ff] filter=lfs diff=lfs merge=lfs -text
+# mp4 caught by audio pattern
+*.[Aa][Vv][Ii] binary
+*.[Bb][Ii][Kk] binary
+*.[Mm][Kk][Vv] binary
+*.[Oo][Gg][VvXx] binary
+*.[Ss][Ww][Ff] binary
 
 
 # -----------------------------------------------
 # CG-related (3D)
 # -----------------------------------------------
-# FBX might be in text format, but most of the time it's big anyway
-*.[Ff][Bb][Xx] filter=lfs diff=lfs merge=lfs
-# same for Maya-ascii format:
-*.[Mm][Aa] filter=lfs diff=lfs merge=lfs
-*.[Oo][Bb][Jj] filter=lfs diff=lfs merge=lfs
+# CG files might be in text format, but most of the time they're too big anyway
+
+*.[Ff][Bb][Xx] text=auto eol=lf
+*.[Mm][Aa] text=auto eol=lf
+*.[Mm][Bb] binary
+*.[Oo][Bb][Jj] text=auto eol=lf
 
 # Substance:
-*.[Ss][Bb][Ss][Aa][Rr] filter=lfs diff=lfs merge=lfs
+*.[Ss][Bb][Ss][Aa][Rr] text=auto eol=lf
 
 # Houdini:
-*.[Oo][Tt][Ll] filter=lfs diff=lfs merge=lfs -text
-*.[Hh][Dd][Aa] filter=lfs diff=lfs merge=lfs -text
-*.[Bb][Gg][Ee][Oo] filter=lfs diff=lfs merge=lfs -text
-*.[Bb][Gg][Ee][Oo].[Ss][Cc] filter=lfs diff=lfs merge=lfs -text
+*.[Oo][Tt][Ll] binary
+*.[Hh][Dd][Aa] binary
+*.[Bb][Gg][Ee][Oo] binary
+*.[Bb][Gg][Ee][Oo].[Ss][Cc] binary
 
 
 # -----------------------------------------------
 # Unity-related
 # -----------------------------------------------
-*.entities filter=lfs diff=lfs merge=lfs -text
-*.bundle filter=lfs diff=lfs merge=lfs -text
+*.entities binary
+*.bundle binary
+
+
+# =========================================================================== #
+# 	Repo-specific
+# =========================================================================== #
+# add here

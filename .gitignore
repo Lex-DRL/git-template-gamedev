@@ -1,4 +1,4 @@
-﻿# Organized+extended by Lex-DRL: https://github.com/Lex-DRL/git-template-gamedev
+# Organized+extended by Lex-DRL: https://github.com/Lex-DRL/git-template-gamedev
 
 # OS-generated
 # ------------
@@ -191,6 +191,6 @@ crashlytics-build.properties
 
 
 # =========================================================================== #
-# 	Project-specific rules
+# 	Repo-specific
 # =========================================================================== #
 # add here
