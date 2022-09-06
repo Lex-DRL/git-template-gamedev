@@ -25,7 +25,7 @@
 *.[Pp][Yy] text diff=python
 
 # Scripts: Other programming languages
-*.[Cc][Ss] text !eol diff=csharp
+*.[Cc][Ss] text diff=csharp
 *.[Cc][Ss][Ss] text diff=css
 *.[Hh] text diff=cpp
 *.[Hh][Tt][Mm] text diff=html
@@ -41,25 +41,13 @@
 
 # Vector graphics
 *.[Ss][Vv][Gg] text
-*.[Aa][Ii] text
 
 
 # -----------------------------------------------
-# CG-related (3D) text formats
-# -----------------------------------------------
-# Nuke
-*.[Nn][Kk] text
-*.[Gg][Ii][Zz][Mm][Oo] text
-
-# Maya
-*.[Mm][Ee][Ll] text
-
-
-# -----------------------------------------------
-# Unity-related text files
+# Unity-related: text
 # -----------------------------------------------
 *.asset text=auto eol=lf
-*.meta text
+*.meta text merge=unityyamlmerge
 
 # Shading
 *.cginc text
@@ -86,13 +74,65 @@
 *.mixer text
 *.overrideController text
 *.playable text
-*.prefab text
+*.prefab text merge=unityyamlmerge
 *.[Ss]prite[Aa]tlas text
-*.unity text
+*.unity text merge=unityyamlmerge
+
+
+# -----------------------------------------------
+# Unity-related: binary
+# -----------------------------------------------
+*.entities binary
+*.bundle binary
+*.unitypackage binary
+
+
+# -----------------------------------------------
+# DCC software (CG/VFX): text/binary
+# -----------------------------------------------
+
+# 2D: Adobe Illustrator:
+*.[Aa][Ii] text=auto eol=lf
+
+# Audio production:
+*.[Rr][Nn][Ss] binary
+*.[Rr][Ee][Aa][Ss][Oo][Nn] binary
+*.[Ss][Ee][Ss][Xx] text diff=html
+
+# 3D: Cross-package / Geometry:
+# Geo-files might be in text format, but most of the time they're too big anyway:
+*.[Ff][Bb][Xx] text=auto eol=lf
+*.[Oo][Bb][Jj] text=auto eol=lf
+
+# Blender
+*.[Bb][Ll][Ee][Nn][Dd] binary
+
+# Foundry Nuke:
+*.[Gg][Ii][Zz][Mm][Oo] text
+*.[Nn][Kk] text
+
+# Foundry Modo:
+*.[Ll][Xx][Oo] binary
+
+# Houdini:
+*.[Oo][Tt][Ll] binary
+*.[Hh][Dd][Aa] binary
+*.[Bb][Gg][Ee][Oo] binary
+*.[Bb][Gg][Ee][Oo].* binary
+*.[Gg][Ee][Oo] binary
+*.[Gg][Ee][Oo].* binary
+
+# Maya
+*.[Mm][Aa] text=auto eol=lf
+*.[Mm][Bb] binary
+*.[Mm][Ee][Ll] text
+
+# Substance:
+*.[Ss][Bb][Ss][Aa][Rr] text=auto eol=lf
 
 
 # =========================================================================== #
-# 	Binary formats
+# 	Common binary formats
 # =========================================================================== #
 
 # For LFS: replace "binary" to "filter=lfs diff=lfs merge=lfs -text"
@@ -101,23 +141,31 @@
 *.[Mm][Dd][Bb] binary
 *.[Pp][Dd][Tt] binary
 
+# Android/Java
+*.[Aa][Aa][Rr] binary
+*.[Aa][Pp][Kk] binary
+*.[Jj][Aa][Rr] binary
+
 # Archives
 *.7[Zz] binary
 *.[Gg][Zz] binary
 *.[Zz][Ii][Pp] binary
 *.[AaJjRrTt][Aa][Rr] binary
 
-# OS libraries
-*.[Dd][Ll][Ll] binary
-*.[Ee][Xx][Ee] binary
-*.[Ss][Oo] binary
-*.[Ss][Yy][Ss] binary
-*.[Bb][Yy][Tt][Ee][Ss] binary
-
 # Python binaries:
 *.[Pp][Yy][CcDdOo] binary
 *.[Pp][Dd][Bb] binary
 *.[Ww][Hh][Ll] binary
+
+# OS libraries / Executables / Software dev
+*.[Aa] binary
+*.[Bb][Yy][Tt][Ee][Ss] binary
+*.[Dd][Ll][Ll] binary
+*.[Ee][Xx][Ee] binary
+*.[Ll][Ii][Bb] binary
+*.[NnXx][Ii][Bb] binary
+*.[Ss][Oo] binary
+*.[Ss][Yy][Ss] binary
 
 # Fonts
 *.[Ee][Oo][Tt] binary
@@ -128,6 +176,8 @@
 # Images: HDR
 *.[Ee][Xx][Rr] binary
 *.[Hh][Dd][Rr] binary
+*.[Tt][Ii][Ff] binary
+*.[Tt][Ii][Ff][Ff] binary
 
 # Images: Primary
 *.[Bb][Mm][Pp] binary
@@ -136,8 +186,6 @@
 *.[Jj][Pp][Ee][Gg] binary
 *.[Pp][Nn][Gg] binary
 *.[Tt][Gg][Aa] binary
-*.[Tt][Ii][Ff] binary
-*.[Tt][Ii][Ff][Ff] binary
 
 # Images: Other
 *.[Cc][Uu][Rr] binary
@@ -151,6 +199,7 @@
 *.[Aa][Aa][Cc] binary
 *.[AaFf][Ll][Aa][Cc] binary
 *.[Aa][Ii][Ff] binary
+*.[Cc][Aa][Ff] binary
 *.[Mm]4[Aa] binary
 *.[Mm][Pp][1234] binary
 *.[Oo][Gg][GgAa] binary
@@ -160,36 +209,9 @@
 # mp4 caught by audio pattern
 *.[Aa][Vv][Ii] binary
 *.[Bb][Ii][Kk] binary
-*.[Mm][Kk][Vv] binary
+*.[Mm][KkOo][Vv] binary
 *.[Oo][Gg][VvXx] binary
 *.[Ss][Ww][Ff] binary
-
-
-# -----------------------------------------------
-# CG-related (3D)
-# -----------------------------------------------
-# CG files might be in text format, but most of the time they're too big anyway
-
-*.[Ff][Bb][Xx] text=auto eol=lf
-*.[Mm][Aa] text=auto eol=lf
-*.[Mm][Bb] binary
-*.[Oo][Bb][Jj] text=auto eol=lf
-
-# Substance:
-*.[Ss][Bb][Ss][Aa][Rr] text=auto eol=lf
-
-# Houdini:
-*.[Oo][Tt][Ll] binary
-*.[Hh][Dd][Aa] binary
-*.[Bb][Gg][Ee][Oo] binary
-*.[Bb][Gg][Ee][Oo].[Ss][Cc] binary
-
-
-# -----------------------------------------------
-# Unity-related
-# -----------------------------------------------
-*.entities binary
-*.bundle binary
 
 
 # =========================================================================== #
