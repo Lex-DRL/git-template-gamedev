@@ -58,12 +58,12 @@
 *.hlslinc text
 *.mat text
 *.shader text
-*.shadervariants text
+*.[Ss]hader[Vv]ariants text
 *.[Ss]hader[Gg]raph text
 
 # Physics
 *.[Pp]hysic[Mm]aterial text
-*.[Pp]hysic[Mm]aterial[23][dD] text
+*.[Pp]hysic[Mm]aterial[23][Dd] text
 
 # Other Unity's text files
 *.anim text
@@ -72,7 +72,7 @@
 *.guiskin text
 *.mask text
 *.mixer text
-*.overrideController text
+*.[Oo]verride[Cc]ontroller text
 *.playable text
 *.prefab text merge=unityyamlmerge
 *.[Ss]prite[Aa]tlas text
@@ -142,15 +142,14 @@
 *.[Pp][Dd][Tt] binary
 
 # Android/Java
-*.[Aa][Aa][Rr] binary
+*.[AaJj][Aa][Rr] binary
 *.[Aa][Pp][Kk] binary
-*.[Jj][Aa][Rr] binary
 
 # Archives
 *.7[Zz] binary
 *.[Gg][Zz] binary
 *.[Zz][Ii][Pp] binary
-*.[AaJjRrTt][Aa][Rr] binary
+*.[RrTt][Aa][Rr] binary
 
 # Python binaries:
 *.[Pp][Yy][CcDdOo] binary
