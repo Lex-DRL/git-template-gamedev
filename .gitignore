@@ -98,6 +98,7 @@ venv.bak/
 # --- Auto-Backups:
 # Nuke:
 *.nk~
+*.nk.autosave
 
 # Houdini:
 **/backup/*.[Hh][Ii][Pp]
