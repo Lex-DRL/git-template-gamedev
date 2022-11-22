@@ -95,12 +95,20 @@ venv.bak/
 # =========================================================================== #
 # 	DRL's CG-related
 # =========================================================================== #
-[Ii]ncremental[Ss]ave/
-.[Mm]aya[Ss]watches/
-**/backup/*.hip
+# --- Auto-Backups:
+# Nuke:
 *.nk~
 
-# FBX included files:
+# Houdini:
+**/backup/*.[Hh][Ii][Pp]
+**/backup/*.[Hh][Dd][Aa]
+**/backup/*.[Oo][Tt][Ll]
+
+# Maya:
+[Ii]ncremental[Ss]ave/
+.[Mm]aya[Ss]watches/
+
+# --- FBX included files:
 *.fbm/
 
 
