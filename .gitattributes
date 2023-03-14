@@ -39,6 +39,9 @@
 *.[Yy][Aa][Mm][Ll] text
 *.[Yy][Mm][Ll] text
 
+# Visual Studio
+*.[Cc][Ss][Pp][Rr][Oo][Jj] text diff=html
+
 # Vector graphics
 *.[Ss][Vv][Gg] text
 
