@@ -89,6 +89,9 @@
 *.bundle binary
 *.unitypackage binary
 
+# Baked:
+OcclusionCullingData.asset binary
+
 
 # -----------------------------------------------
 # DCC software (CG/VFX): text/binary
