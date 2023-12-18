@@ -6,6 +6,10 @@
 [Tt]humbs.db
 [Dd]esktop.ini
 
+# Temp files:
+*.tmp
+*.temp
+
 # Programming - general
 *.log
 
