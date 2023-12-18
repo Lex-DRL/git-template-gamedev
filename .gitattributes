@@ -153,7 +153,9 @@ OcclusionCullingData.asset binary
 
 # Archives
 *.7[Zz] binary
+*.7[Zz].* binary
 *.[Gg][Zz] binary
+*.[Gg][Zz].* binary
 *.[Zz][Ii][Pp] binary
 *.[RrTt][Aa][Rr] binary
 
