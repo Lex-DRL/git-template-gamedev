@@ -18,7 +18,7 @@
 # 	IDEs
 # =========================================================================== #
 
-# JetBrains PyCharm / Rider
+# JetBrains IDEs: PyCharm / Rider
 .idea/
 
 
@@ -26,6 +26,12 @@
 # 	Python-related
 # =========================================================================== #
 # src: https://github.com/github/gitignore/blob/main/Python.gitignore
+
+# Environments
+.env*
+.venv*
+env*/
+venv*/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -85,12 +91,6 @@ docs/_build/
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
 __pypackages__/
-
-# Environments
-.env*
-.venv*
-env*/
-venv*/
 
 
 # =========================================================================== #
