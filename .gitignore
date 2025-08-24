@@ -6,8 +6,8 @@
 # Temp files/folders:
 *.tmp
 *.temp
-/tmp*
-/temp*
+tmp*/
+temp*/
 
 # Programming - general
 *.log
