@@ -5,8 +5,8 @@
 # SourceTree is a single GUI known to have issues with them. If you use SourceTree,
 # you need to "flatten" rules into hard-spelled ones for each case (both `*.txt` and `*.TXT`).
 
-# Auto-detect text/binary by default:
-* 	text=auto eol=lf
+# Auto-detect text/binary by default + force UNIX line endings on clone/pull for all text files:
+* text=auto eol=lf
 
 # raw-Text files
 *.[Cc][Ss][Vv] text
@@ -19,10 +19,11 @@
 *.[Ss][Hh][Aa][0123456789]* text
 
 # Scripts: OS
-*.[Bb][Aa][Tt] text
-*.[Cc][Mm][Dd] text
+# `eol=crlf` only affects working copy. Commits are still with LF
+*.[Bb][Aa][Tt] text eol=crlf
+*.[Cc][Mm][Dd] text eol=crlf
 *.[Pp][Ll] text
-*.[Pp][Ss]1 text
+*.[Pp][Ss]1 text eol=crlf
 *.[Ss][Hh] text diff=bash
 
 # Scripts: Python
@@ -44,7 +45,7 @@
 *.[Yy][Mm][Ll] text
 
 # Visual Studio
-*.[Cc][Ss][Pp][Rr][Oo][Jj] text diff=html
+*.[Cc][Ss][Pp][Rr][Oo][Jj] text eol=crlf diff=html
 
 # Vector graphics
 *.[Ss][Vv][Gg] text
