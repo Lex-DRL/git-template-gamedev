@@ -1,4 +1,9 @@
+# Compiled from various templates - for python, Unity projects and CG/VFX content in general.
 # Organized+extended by Lex-DRL: https://github.com/Lex-DRL/git-template-gamedev
+
+# WARNING: Despite character classes ([xX] patterns) officially being supported by git,
+# SourceTree is a single GUI known to have issues with them. If you use SourceTree,
+# you need to "flatten" rules into hard-spelled ones for each case (both `*.txt` and `*.TXT`).
 
 # Auto-detect text/binary by default:
 * 	text=auto eol=lf
