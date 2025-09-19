@@ -58,14 +58,15 @@
 *.meta text merge=unityyamlmerge
 
 # Shading
-*.cginc text
-*.compute text
+*.cginc text diff=cpp
+*.compute text diff=cpp
 *.giparams text
-*.glsl text
-*.hlsl text
-*.hlslinc text
+*.glsl text diff=cpp
+*.glslinc text diff=cpp
+*.hlsl text diff=cpp
+*.hlslinc text diff=cpp
 *.mat text
-*.shader text
+*.shader text diff=cpp
 *.[Ss]hader[Vv]ariants text
 *.[Ss]hader[Gg]raph text
 
