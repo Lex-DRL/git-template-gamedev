@@ -121,6 +121,9 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
+# The next one is NOT a typo - whether a bug in coverage lib or not, but it
+# can actually create a file with such "extension" (with comma):
+# https://github.com/nedbat/coveragepy/blob/8827634adcfe4a4baf71cf0b3e1cd967cf9b14a2/coverage/annotate.py#L84
 *,cover
 .hypothesis/
 .pytest_cache/
