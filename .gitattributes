@@ -153,6 +153,9 @@ OcclusionCullingData.asset binary
 *.[Mm][Dd][Bb] binary
 *.[Pp][Dd][Tt] binary
 
+# Windows installer
+*.[Mm][Ss][Ii] binary
+
 # Android/Java
 *.[AaJj][Aa][Rr] binary
 *.[Aa][Pp][Kk] binary
