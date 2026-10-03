@@ -68,8 +68,8 @@ Temporary Items
 # src: https://github.com/github/gitignore/blob/main/Python.gitignore
 
 # Environments
-.env*
-.venv*
+.env*/
+.venv*/
 env*/
 venv*/
 
